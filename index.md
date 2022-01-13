@@ -30,3 +30,5 @@ System.out.println("Hello Heaven!");
 ```
 
 1. Why am I here?
+2. Why am I there?
+3. Why ar you over there?
