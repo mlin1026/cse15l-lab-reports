@@ -20,9 +20,9 @@ This is the step where we download editor for any coding, although we won't be g
 
 ![Acc](Account_lookup.jpg)
 
-3. Here you will find the account username that you are associate with, the one we are using is cs15lwi*** since we are in CSE 15L class.
+3. Here you will find the account username that you are associate with, the one we are using is cs15lwi***(replace the stars with whatever your letters are) since we are in CSE 15L class.
 
-4. Now you can try to connect with UCSd computer by using
+4. Now you can try to connect with UCSD computer by using
 `ssh cs15lwi22**@ieng6.ucsd.edu`
 You may use terminal in VS code or cmd in windows. You will encounter something like 
 ```
@@ -55,6 +55,36 @@ Finally, you can use `exit` to leave the server you are connecting to.
 ## Moving Files with `scp`
 
 1. `scp` is the command for you to upload files into the server you are connecting to.
+2. To test this out, create the fild `WhereAmI.java` in your local machine.
+3. You can then edit this file with the VSCode you just downloaded.
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+This code essentially tells you some information on your computer, such as OS system name, the name of the user, etc...
+
+4. Open VSCode terminal, make sure you are in the directory of where your `WhereAmI.java` is localed. use the command `javac WhereAmI.java` to compile and `java WhereAmI` to execute the file.
+![img](WhereAmILocal.jpg)
+This should be the expected output, which is some info of your local machine.
+
+5. Then go back to terminal and use `scp WhereAmI.java cs15lwi22***@ieng6.ucsd.edu:~/`, login into school's server with ssh, then use `ls`.
+
+![img](FileUploadls.jpg)
+
+You can see that the file is uploaded to the server.
+
+6. Now do `javac WhereAmI.java` to compile and `java WhereAmI` to execute on the server. (Note: Now the file is runned on the server, not your machine)
+
+![img](WhereAmIServer.jpg)
+
+You will notice that the output is different, since now the program is taking information from the computer from UCSD computer center instead of your machine.
+
 
 ## Setting an SSH Key
 This part is for the purpose that we don't have to type our password everytime we log into the server using SSH
