@@ -1,5 +1,6 @@
+
 [Lab Report 1](lab-report-1-week-2.html)
-[Lab Report 1](https://mlin1026.github.io/<your-lab-reports-repo>/lab-report-1-week-2.html)
+
 
 Testing
 *Testing*
@@ -25,7 +26,8 @@ Horizontal rule:
 
 ***
 
-Weird Naming` with backticks
+
+`Weird Naming` with backticks
 
 ```
 # code block
