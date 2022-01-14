@@ -55,7 +55,7 @@ Finally, you can use `exit` to leave the server you are connecting to.
 ## Moving Files with `scp`
 
 1. `scp` is the command for you to upload files into the server you are connecting to.
-2. To test this out, create the fild `WhereAmI.java` in your local machine.
+2. To test this out, create the file `WhereAmI.java` in your local machine.
 3. You can then edit this file with the VSCode you just downloaded.
 ```
 class WhereAmI {
