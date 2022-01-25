@@ -107,5 +107,9 @@ There are some overall small tips that can help make the remote connecting and r
 4. Ctrl A to select text in current line
 5. Use tab can cycle through all folders in current directory
 
-![shortcut](shortcut.jpg)
 - When you repeat the same command, you can use up arrow key to do so.
+- You can also put multiple command together to execute multiple command at the same time
+![image](optimizing_2.jpg)
+For the image above, the ssh with the key skip the password phase. Then using copy and paste shortcut keys, we compile and run the java file in one command. Then use the up arrow, we can repeat the compile and running of java.
+
+KeyStroke count for running java file on the remote server. java = 4, copy/paste = 4, java = 4, paste = 2, semicolon = 1, delete extension name(.java) = 5, enter key = 1. The second time running only use up arrow key = 1. The total keystroke is 4+4+4+2+1+5+1+1 = 22 keystrokes to run the program twice.
