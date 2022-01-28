@@ -6,9 +6,10 @@ In Week 3 and week 4 we use the MarkdownParse.java from the lecture and added ou
 
 ![Img](week4_changes.jpg)
 
-Link to first case: [VScode](https://github.com/mlin1026/markdown-parse/blob/main/breaking-test.md)
 
 > First issue
+
+Link to first case: [Github](https://github.com/mlin1026/markdown-parse/blob/main/breaking-test.md)
 
 For the first issue, we obtain an error message
 
@@ -33,6 +34,8 @@ Bug: The loop and the behavior of indexOf to return -1 when element not found. W
 
 > Second Issue
 
+Link to second case: [Github](https://github.com/mlin1026/markdown-parse/blob/main/breaking-test_2.md)
+
 The second issue we encounter this issue:
 
 ```
@@ -54,6 +57,8 @@ Bug: markdown.substring(closeParen-1,closeParen), if closeParen is -1, it will h
 Symptom: Index out of bound error
 
 > Third issue
+
+Link to third case: [Github](https://github.com/mlin1026/markdown-parse/blob/main/breaking-test_3.md)
 
 The third case is an empty md file, which to be honest, we didn't encounter any issue. There isn't any error and the output is empty, which is what we expected. So we didn't do anything to change this issue. We do however decide to change the code to make it more efficient though.
 
