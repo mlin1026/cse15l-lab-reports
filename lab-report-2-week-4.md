@@ -60,7 +60,7 @@ Symptom: Index out of bound error
 
 Link to third case: [Github](https://github.com/mlin1026/markdown-parse/blob/main/breaking-test4.md)
 
-The third case is an empty md file, which to be honest, we didn't encounter any issue. There isn't any error and the output is empty, which is what we expected. So we didn't do anything to change this issue. We do however decide to change the code to make it more efficient though.
+The third case is an file with images and links, which the output pull both normal link and image link into output.
 
 The symptom is: 
 ![Test](week4_3bug.jpg)
