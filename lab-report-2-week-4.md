@@ -2,7 +2,7 @@
 In Week 3 and week 4 we use the MarkdownParse.java from the lecture and added our own test cases to The three cases are
 1. A link: goog()le.com with correct format
 2. [a-link] (www.google.com; missing a back parenthesis
-3. A empty md file 
+3. Image file
 
 ![Img](week4_changes.jpg)
 
@@ -58,18 +58,22 @@ Symptom: Index out of bound error
 
 > Third issue
 
-Link to third case: [Github](https://github.com/mlin1026/markdown-parse/blob/main/breaking-test_3.md)
+Link to third case: [Github](https://github.com/mlin1026/markdown-parse/blob/main/breaking-test4.md)
 
 The third case is an empty md file, which to be honest, we didn't encounter any issue. There isn't any error and the output is empty, which is what we expected. So we didn't do anything to change this issue. We do however decide to change the code to make it more efficient though.
 
-![Test](wee4_changes_3.jpg)
+The symptom is: 
+![Test](week4_3bug.jpg)
 
-Since we know that the format of link in markdown file must contain "[]" and "()", we decide to add 
-```
-if(nextOpenBracket == -1){
-        break;
-}
-```
-If nextOpenBracket is -1, it mean that there is no link in this md file and we can terminate the loop earlier.
+We realize that the code didn't take into "!" into account when grabbing links, which result in code including the image link into the output.
 
-There isn't any symptom or bug in this empty cases, we simply just think of some other cases where link simply didn't exist and try to make program run faster with this command.
+We fix it by makign sure that there isn't any ! before openBracket, if there is, we skip this part of the md file.
+
+![Test](week4_fix3.jpg)
+
+
+
+The symptom is that the output is grabbing image into link set
+
+The bug is that the code didn't take into encounter of ! before the image link, which result in code grabbing image link into link also.
+
