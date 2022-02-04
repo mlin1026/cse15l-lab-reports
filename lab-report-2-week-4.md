@@ -67,7 +67,10 @@ The symptom is:
 
 We realize that the code didn't take into "!" into account when grabbing links, which result in code including the image link into the output.
 
-We fix it by makign sure that there isn't any ! before openBracket, if there is, we skip this part of the md file.
+
+Commit:
+![Test](week4_commit3.jpg)
+We fix it by making sure that there isn't any ! before openBracket, if there is, we skip this part of the md file.
 
 ![Test](week4_fix3.jpg)
 
