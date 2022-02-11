@@ -1,6 +1,6 @@
 [back to index](index.html)
 
-# Lab Report Week 2
+# Lab Report Week 6
 
 ## Streamlining ssh Configuration
 
