@@ -2,6 +2,10 @@
 
 # Lab Report Week 8
 
+Link to my markdown parse: [Link](https://github.com/mlin1026/markdown-parse)
+
+Link to my reviewed markdown repository: [Link](https://github.com/c1peng/markdown-parse)
+
 ## Snippet 1 Expected output
 
 Using CommonMark demo site, we obtained:
