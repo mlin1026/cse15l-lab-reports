@@ -7,7 +7,7 @@
 Due to the unknown reason that cause the infinite loop in my code, I decide to search through the test-files manually. Luckily, I still found some file with different output. The first one is 580.md
 
 The output from Joe's code is 
-![image](week10_1.png) for 580.md (/url)
+![image](week10_1.PNG) for 580.md (/url)
 
 When I run my own code, I obtain
 ![image](week10_2.jpg) nothing for 580.md
